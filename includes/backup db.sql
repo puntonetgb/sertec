@@ -41,14 +41,8 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`idcliente`, `Nombre`, `Celular`, `Email`, `Direccion`) VALUES
-(1, 'Alejandro Cabral', '2243409820', 'puntonetbelgrano@gmail.com', 'Lombardo 40'),
-(8, 'Gaston Alcuri', '2243419898', 'alcurigaston@gmail.com', '37 456'),
-(9, 'Gonzalo Villalba', '2241459898', 'gonza13@hotmail.com', 'Amenabar 456'),
-(11, 'Claudia Toledo', '2241549063', 'pata.toledo@hotmail.com', 'Av. Sarmiento 1165'),
-(12, 'Ariel Cabral', '2243418819', 'cabralariel@gmail.com', 'Julio Llanos 872'),
-(13, 'Pepe Argento', '3463457475', 'pepe.arg@hotmail.com', 'gerhejh'),
-(15, 'Celia Laraignee', '2241548097', 'puntonetbelgrano@gmail.com', 'Lombardo 40'),
-(19, 'Juanjo Aranzabal', '2243409820', 'juanj0@gmail.com', 'Estrada 333');
+(1, 'Alejandro Mir', '00000000', 'mi@mail.com', 'lalala 456');
+
 
 -- --------------------------------------------------------
 
@@ -189,23 +183,6 @@ CREATE TABLE `sertec` (
   `Importe` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Volcado de datos para la tabla `sertec`
---
-
-INSERT INTO `sertec` (`idsertec`, `idcliente`, `Tecnico`, `Equipo`, `Marca`, `Descripcion`, `Accesorio`, `Estado`, `Fecha`, `Resolucion`, `Presupuesto`, `Importe`) VALUES
-(12, 11, 3, 'Monitor', 'Lenovo', 'roto', '', 4, '2019-08-26', 'cambio de fuente', 0, 1800),
-(13, 19, 1, 'Notebook', 'Bangho', 'no enciende', 'cargador', 6, '2019-08-26', '', 0, 0),
-(14, 13, 2, 'GPS', 'Otro', 'Actualizar', '', 6, '2019-08-27', '', 0, 0),
-(15, 12, 1, 'PC de Escritorio', 'Commodore', 'Se cuelga', '', 5, '2019-08-27', 'cambio de pila', 0, 200),
-(16, 9, 1, 'Notebook', 'HP', 'Problemas con la pantalla', 'Maletin', 2, '2019-08-27', 'Cambio de Disco Rigido\r\nInstalacion de Sistema', 3850, 0),
-(17, 15, 3, 'Impresora', 'Otro', 'error', '', 2, '2019-08-27', '', 0, 0),
-(18, 1, 0, 'Notebook', 'Acer', 'dgjdj', '', 6, '2019-08-27', '', 0, 0),
-(19, 9, 2, 'Notebook', 'HP', 'NO enciende', 'c/cargador', 6, '2019-08-27', '', 0, 0),
-(20, 12, 2, 'PC de Escritorio', 'Otro', 'Explicar funcionamiento del sistema, ver modificaciones futuras, configuración de router.', '', 5, '2019-08-28', 'cambio de pantalla', 0, 4800),
-(21, 12, 1, 'Netboook', 'Exo', 'No enciende', '', 6, '2019-08-28', 'Cambio de pantalla', 4800, 0),
-(22, 1, 3, 'GPS', 'Bangho', 'Actualizar', 'cargador', 6, '2019-08-28', 'qdwefegwergqerg', 480, 0),
-(23, 1, 1, 'Gabinete', 'Generico', 'No enciende', '', 4, '2019-10-31', 'CAMBIO DE FUENTE', 1950, 1950);
 
 -- --------------------------------------------------------
 
@@ -246,9 +223,7 @@ CREATE TABLE `tecnico` (
 --
 
 INSERT INTO `tecnico` (`idtecnico`, `Nombre`) VALUES
-(1, 'Alejandro Cabral'),
-(2, 'Gaston Alcuri'),
-(3, 'Gonzalo Villalba');
+(1, 'Alejandro Mir');
 
 -- --------------------------------------------------------
 
@@ -268,9 +243,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `created_at`) VALUES
-(1, 'alejandro', '$2y$10$m9XVM9nqS2QfoicS73h/SOwdKY.Ci3ovgS7FLsB1tACg0SmiDp2Xy', '2019-08-18 19:30:42'),
-(2, 'gaston', '$2y$10$EbhJEpgTOxzZWgKEBeZZzutdkvRv2Px1c46YrE8ufjMbABvPInWKu', '2019-08-19 14:10:11'),
-(3, 'gonzalo', '$2y$10$sejo9LczumKBd.DGixy25OvPkuUUolMFJNkbvsxA0HP7kjrE/2VRS', '2019-08-19 14:10:31');
+(1, 'alejandro', '$2y$10$m9XVM9nqS2QfoicS73h/SOwdKY.Ci3ovgS7FLsB1tACg0SmiDp2Xy', '2019-08-18 19:30:42');
 
 --
 -- Índices para tablas volcadas
